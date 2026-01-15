@@ -7,6 +7,7 @@
 #include <utility>
 #include <vector>
 #include <cmath>
+#include <cstdint>
 #include <memory>
 #include <algorithm>
 #include <functional>
@@ -415,10 +416,10 @@ namespace ImFlow
          * @return Const reference to editor's grid scroll
          */
         const ImVec2& getScroll() { return m_context.scroll(); }
-        
+
         /**
          * @brief <BR>Get the scale adjusted screen space mouse delta, needed for dragging
-         * 
+         *
          * @return scale adjusted mouse delta.
          */
         ImVec2 getScreenSpaceDelta(){return m_context.getScreenDelta(); }
